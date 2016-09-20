@@ -430,7 +430,7 @@ module.exports = function (grunt) {
       },
       heroku: {
         options: {
-          remote: 'git.heroku.com/danstpaul-template-website.git',
+          remote: 'https://git.heroku.com/danstpaul-template-website.git',
           branch: 'master'
         }
       }
