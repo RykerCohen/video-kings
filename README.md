@@ -10,7 +10,7 @@ version 0.15.1.
 Clone
 ```
 $ git clone git@github.com:danielstpaul/website_template.git <app__name>
-$cd <app__name>
+$ cd <app__name>
 ```
 
 Install Dependencies
@@ -99,7 +99,7 @@ buildcontrol: {
   },
   heroku: {
     options: {
-      remote: 'git@heroku.com:app-name-99.git',
+      remote: 'https://git@heroku.com:app-name-99.git',
       branch: 'master'
     }
   }
