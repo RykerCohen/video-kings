@@ -72,14 +72,10 @@ put the following into your Procfile file:
 web: node index.js
 ``` -->
 
-Initialize local git repo and create .gitignore file in 'dist' folder
+Initialize local git repo in 'dist' folder and commit code
 ```
 $ cd dist
 $ git init
-$ touch .gitignore
-```
-edit .gitignore file to ignore ```node_modules```
-```
 $ git add .
 $ git commit -m "initial commit"
 ```
@@ -111,10 +107,17 @@ buildcontrol: {
 ```
 for github pages check Gruntfile.js
 
-DEPLOY
+Deploy (push dist to heroku)
 ```
 $ cd ..
 $ grunt deploy
+```
+
+***with heroku you may have to scale:***
+```
+$ heroku ps:scale web=1
+$ cd dist
+$ heroku open
 ```
 
 # Updates
