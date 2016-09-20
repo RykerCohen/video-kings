@@ -12,9 +12,6 @@ module.exports = function (grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
-  // Build Control
-  require('load-grunt-tasks')(grunt);
-
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
@@ -502,6 +499,9 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
+
+  // Build Control
+  grunt.loadNpmTasks('grunt-build-control');
 
   // Deployment shortcut
   grunt.registerTask('deploy', ['buildcontrol']);
