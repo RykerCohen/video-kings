@@ -111,15 +111,9 @@ buildcontrol: {
 ```
 for github pages check Gruntfile.js
 
-Commit changes to Gruntfile
-```
-$ cd ..
-$ git add .
-$ git commit -m "updated gruntfile"
-```
-
 DEPLOY
 ```
+$ cd ..
 $ grunt deploy
 ```
 
