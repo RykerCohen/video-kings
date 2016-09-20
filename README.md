@@ -86,7 +86,7 @@ $ git commit -m "initial commit"
 
 # Deployment
 
-#for Heroku
+***for Heroku***
 Create Heroku App
 ```
 $ heroku create <app_name>
