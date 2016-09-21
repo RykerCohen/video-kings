@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name tamplateWebsiteApp.controller:MainCtrl
+ * @name tamplateWebsiteApp.controller:ContactCtrl
  * @description
- * # MainCtrl
+ * # ContactCtrl
  * Controller of the tamplateWebsiteApp
  */
 angular.module('tamplateWebsiteApp')
-  .controller('MainCtrl', ['$scope', function ($scope) {
+  .controller('ContactCtrl', ['$scope', function ($scope) {
 
     $scope.awesomeThings = [ 'HTML5 Boilerplate', 'AngularJS', 'Karma' ];
-    
+
   }]);

@@ -8,10 +8,8 @@
  * Controller of the tamplateWebsiteApp
  */
 angular.module('tamplateWebsiteApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('AboutCtrl', ['$scope', function ($scope) {
+
+    $scope.awesomeThings = [ 'HTML5 Boilerplate', 'AngularJS', 'Karma' ];
+
+  }]);
