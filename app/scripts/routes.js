@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc overview
- * @name tamplateWebsiteApp Routes
+ * @name videoKingsApp Routes
  * @description
- * # tamplateWebsiteApp Routes
+ * # videoKingsApp Routes
  *
  * Route module of the application.
  */

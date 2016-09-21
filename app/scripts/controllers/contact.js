@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name tamplateWebsiteApp.controller:ContactCtrl
+ * @name videoKingsApp.controller:ContactCtrl
  * @description
  * # ContactCtrl
- * Controller of the tamplateWebsiteApp
+ * Controller of the videoKingsApp
  */
 angular.module('tamplateWebsiteApp')
   .controller('ContactCtrl', ['$scope', function ($scope) {

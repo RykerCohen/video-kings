@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name tamplateWebsiteApp.controller:AboutCtrl
+ * @name videoKingsApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the tamplateWebsiteApp
+ * Controller of the videoKingsApp
  */
 angular.module('tamplateWebsiteApp')
   .controller('AboutCtrl', ['$scope', function ($scope) {
