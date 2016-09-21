@@ -7,7 +7,7 @@
  * # AboutCtrl
  * Controller of the videoKingsApp
  */
-angular.module('tamplateWebsiteApp')
+angular.module('videoKingsApp')
   .controller('AboutCtrl', ['$scope', function ($scope) {
 
     $scope.awesomeThings = [ 'HTML5 Boilerplate', 'AngularJS', 'Karma' ];

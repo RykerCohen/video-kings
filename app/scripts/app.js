@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc overview
- * @name tamplateWebsiteApp
+ * @name videoKingsApp
  * @description
- * # tamplateWebsiteApp
+ * # videoKingsApp
  *
  * Main module of the application.
  */
