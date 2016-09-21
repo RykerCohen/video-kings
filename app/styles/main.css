@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Bangers:300,400,700);
 
 .browsehappy {
   margin: 0.2em 0;
@@ -20,48 +21,120 @@ html {
 
 body {
   width: 100%;
-  background-color: #232323;
-  font-family: Lato;
+  background-color: #fdfdfd;
+  font-family: Raleway;
 }
 
 [ng-click] {
   cursor: pointer;
 }
 
+#title {
+  font-size: 8em;
+}
+
 h1,
 h2,
 h3,
-h4,
-h5 {
-  font-family: Lato;
-  color: whitesmoke;
-  font-weight: 400;
+h4 {
+  font-family: Bangers;
 }
 
 li,
+h5,
 h6,
 p,
 label {
-  font-family: Lato;
-  color: whitesmoke;
-  font-weight: 300;
+  font-family: Raleway;
 }
 
 li {
   list-style-type: none;
+  display: inline-block;
 }
 
 li a {
   cursor: pointer;
+  color: #000000;
+  opacity: 0.8;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: orange;
+  opacity: 1;
+}
+
+ul {
+  margin-left: -3em;
 }
 
 span {
-  font-family: Lato;
-  font-weight: 700;
+  font-family: Raleway;
 }
 
 /*Nav Bar*/
+#logo {
+  padding-top: 3em;
+  opacity: 0.8;
+}
 
+#nav-seperator {
+  padding-left: 1em;
+  padding-right: 1em;
+  opacity: 0.6;
+  font-size: 20px;
+}
+
+nav {
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 15px;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+
+/*Feed Grid*/
+.content {
+  width: 100%;
+  /*padding-top: 1.5em;*/
+  padding-bottom: 3.5em;
+}
+
+.feed-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 7px;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wide {
+  min-width: 98%;
+  height: 480px;
+}
 
 /*Footer*/
 .footer {
@@ -70,10 +143,11 @@ span {
   height: 2.5em;
   bottom: 0;
   width: 100%;
+  opacity: 0.7;
 }
 
 .footer p {
-  font-family: Lato;
+  font-family: Raleway;
   padding-top: 0.5em;
   text-align: center;
   margin: 0;
