@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
-@import url(https://fonts.googleapis.com/css?family=Bangers);
 
 .browsehappy {
   margin: 0.2em 0;
@@ -38,7 +37,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Bangers;
+  font-family: Raleway;
 }
 
 li,
@@ -101,12 +100,13 @@ nav {
   font-size: 1em;
   padding-bottom: 1.5em;
   opacity: 0.8;
+  margin-top: 3em;
   margin-top: -3em;
 }
 
 /*Feed Grid*/
 .container {
-  width: 1000px;
+  max-width: 1000px;
 }
 
 .content {
