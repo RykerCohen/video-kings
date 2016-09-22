@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
-@import url(https://fonts.googleapis.com/css?family=Bangers:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
 
 .browsehappy {
   margin: 0.2em 0;
@@ -21,7 +21,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #f9f9ff;
+  background-color: #f9f9f9;
   font-family: Raleway;
 }
 
@@ -47,7 +47,7 @@ h6,
 p,
 label {
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 li {
@@ -68,8 +68,13 @@ li a {
 }
 
 li a:hover, li a:focus {
-  color: #2c8cb3;
+  color: orange;
   opacity: 1;
+}
+
+*:active {
+  text-decoration: none !important;
+  color: orange;
 }
 
 ul {
@@ -82,8 +87,8 @@ span {
 
 /*Nav Bar*/
 #logo {
-  padding-top: 1em;
-  opacity: 0.85;
+  opacity: 0.9;
+  margin-top: -4em;
 }
 
 #nav-seperator {
@@ -93,12 +98,17 @@ span {
 }
 
 nav {
-  font-size: 15px;
-  padding-top: 1em;
+  font-size: 1em;
   padding-bottom: 1.5em;
+  opacity: 0.8;
+  margin-top: -3em;
 }
 
 /*Feed Grid*/
+.container {
+  width: 1000px;
+}
+
 .content {
   width: 100%;
   padding-bottom: 10em;
@@ -139,10 +149,14 @@ nav {
   height: auto;
 }
 
+.thin {
+  max-height: 50px;
+}
+
 /*Video*/
 .vid-div {
   overflow: hidden;
-  max-height: 420px;
+  max-height: 400px;
 }
 .videoWrapper {
 	position: relative;
