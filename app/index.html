@@ -9,8 +9,10 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.) styles/font-awesome.css -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -23,26 +25,32 @@
 
     <!-- Add your site or application content here -->
     <header class="text-center">
-      <a href="#/"><img id="logo" src="images/logo.png" width="120"></a>
+      <a href="#/"><img id="logo" src="images/logo.png" width="100"></a>
       <h4 id="title">VIDEO KINGS</h4>
       <nav>
         <ul>
           <li><a href="#/about" target="_self" title="About">ABOUT</a></li>
-          <li id="nav-seperator"><i class="fa fa-facebook"></i></li>
+          <li id="nav-seperator"><i class="fa fa-bookmark"></i></li>
           <li><a href="#/contact" target="_self" title="Services">SERVICES</a></li>
-          <li id="nav-seperator"><i class="fa fa-facebook"></i></li>
-          <li><a href="#/portfolio" target="_self" title="Services">WORK</a></li>
+          <li id="nav-seperator"><i class="fa fa-bookmark"></i></li>
+          <li><a href="#/portfolio" target="_self" title="Work">WORK</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="container">
-    <div ng-view=""></div>
+    <div class="container main">
+      <div ng-view=""></div>
     </div>
 
     <br />
     <div class="footer">
       <div class="container">
+        <ul class="icons">
+          <li><i class="fa fa-facebook"><a href=""></a></i></li>
+          <li><i class="fa fa-vimeo"></i><a href=""></a></li>
+          <li><i class="fa fa-linkedin"></i><a href=""></a></li>
+        </ul>
+        <br />
         <p>&copy Ed St Paul 2016</p>
       </div>
     </div>
