@@ -16,18 +16,23 @@ angular.module('Routes', [
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+        controller: 'MainCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controller: 'AboutCtrl'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl',
-        controllerAs: 'contact'
+        controller: 'ContactCtrl'
+      })
+      .when('/work', {
+        templateUrl: 'views/work.html',
+        controller: 'WorkCtrl'
+      })
+      .when('/projects/:id', {
+        templateUrl: 'views/projects.html',
+        controller: 'ProjectsCtrl'
       })
       .otherwise({
         redirectTo: '/'

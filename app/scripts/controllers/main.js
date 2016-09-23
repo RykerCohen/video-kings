@@ -8,8 +8,6 @@
  * Controller of the videoKingsApp
  */
 angular.module('videoKingsApp')
-  .controller('MainCtrl', ['$scope', function ($scope) {
-
-    $scope.awesomeThings = [ 'HTML5 Boilerplate', 'AngularJS', 'Karma' ];
-
+  .controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
+  
   }]);

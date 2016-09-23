@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Video Kings | London Based Video Production Company</title>
     <meta name="description" content="THE VIDEO KINGS ARE AN AWARD WINNING PRODUCTION COMPANY MAKING FILMS FOR SOME OF THE WORLD'S MOST EXCITING ARTISTS, RECORD-LABELS, COMPANIES & BRANDS | 'WE  COLLABORATE, WE CREATE, WE TELL STORIES'">
-    
+
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
@@ -27,17 +27,15 @@
     <!-- Add your site or application content here -->
     <header class="text-center">
       <a href="#/"><img id="logo" src="images/TVKingsLogo.png" width="300"></a>
-      <!-- <a href="#/"><img id="logo" src="images/logo.png" width="70"></a> -->
-      <!-- <h4 id="title">VIDEO KINGS</h4> -->
       <nav>
         <ul>
-          <li><a href="#/" target="_self" title="Home">HOME</a></li>
+          <li><a href="#/" target="_self" title="Home" ng-class="{'active': isActive('/')}">HOME</a></li>
           <li id="nav-seperator"></li>
-          <li><a href="#/about" target="_self" title="About">ABOUT</a></li>
+          <li><a href="#/about" target="_self" title="About" ng-class="{'active': isActive('/about')}">ABOUT</a></li>
           <li id="nav-seperator"></li>
-          <li><a href="#/contact" target="_self" title="Services">SERVICES</a></li>
+          <li><a href="#/contact" target="_self" title="Services" ng-class="{'active': isActive('/contact')}">SERVICES</a></li>
           <li id="nav-seperator"></li>
-          <li><a href="#/portfolio" target="_self" title="Work">WORK</a></li>
+          <li><a href="#/work" target="_self" title="Work" ng-class="{'active': isActive('/work')}">WORK</a></li>
         </ul>
       </nav>
     </header>
@@ -50,12 +48,13 @@
     <div class="footer">
       <div class="container">
         <ul class="icons">
+          <li><i class="fa fa-envelope-o"><a href=""></a></i></li>
           <li><i class="fa fa-facebook"><a href=""></a></i></li>
+          <li><i class="fa fa-instagram"></i><a href=""></a></li>
           <li><i class="fa fa-vimeo"></i><a href=""></a></li>
-          <li><i class="fa fa-linkedin"></i><a href=""></a></li>
         </ul>
         <br />
-        <p>&copy ED ST PAUL</p>
+        <p>Video Kings &copy</p>
       </div>
     </div>
 
@@ -91,6 +90,8 @@
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/work.js"></script>
+    <script src="scripts/controllers/projects.js"></script>
     <!-- endbuild -->
 </body>
 </html>
