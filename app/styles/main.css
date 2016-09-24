@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700|Raleway:400,700);
 
 .browsehappy {
   margin: 0.2em 0;
@@ -10,6 +10,10 @@
 .disabled {
    pointer-events: none;
    cursor: default;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 html {
@@ -38,25 +42,22 @@ h2,
 h3,
 h4 {
   font-family: Raleway;
+  font-weight: 700;
 }
 
+p,
+a,
 li,
 h5,
 h6,
-p,
 label {
-  font-family: Raleway;
+  font-family: Quicksand;
   font-weight: 400;
+  text-decoration: none !important;
 }
 
 li {
   display: inline-block;
-  text-decoration: none !important;
-}
-
-a {
-  text-decoration: none !important;
-  font-weight: 400;
 }
 
 li a {
@@ -77,6 +78,20 @@ ul {
 
 span {
   font-family: Raleway;
+  font-weight: 700;
+}
+
+/*parallax*/
+.parallax {
+  /* The image used */
+  background-image: url("../images/lost-village.png");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Nav Bar*/
@@ -86,31 +101,31 @@ span {
 }
 
 #nav-seperator {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   font-size: 20px;
 }
 
 nav {
   font-size: 1em;
   padding-bottom: 1.5em;
-  margin-top: 3em;
-  margin-top: -3em;
-  transform: scale(1,.9);
-  -webkit-transform:scale(1,.9); /* Safari and Chrome */
-  -moz-transform:scale(1,.9); /* Firefox */
-  -ms-transform:scale(1,.9); /* IE 9+ */
-  -o-transform:scale(1,.9); /* Opera */
+  margin-top: -4em;
+  transform: scale(1,.95);
+  -webkit-transform:scale(1,.95);
+  -moz-transform:scale(1,.95);
+  -ms-transform:scale(1,.95);
+  -o-transform:scale(1,.95);
 }
+
 
 /*Feed Grid*/
 .container {
-  max-width: 1000px;
+  max-width: 1050px;
 }
 
 .content {
   width: 100%;
-  padding-bottom: 10em;
+  margin-bottom: 7em;
 }
 
 .feed-grid {
@@ -152,20 +167,44 @@ nav {
   max-height: 50px;
 }
 
+.no-margin {
+  margin: 0px !important;
+}
+
 /*Video*/
 .vid-div {
   overflow: hidden;
-  max-height: 400px;
+  max-height: 420px;
+}
+.vid-div-slit {
+  overflow: hidden;
+  max-height: 130px;
 }
 .videoWrapper {
 	position: relative;
   left: 0; right: 0;
-  margin-top: -8%;
-  margin-bottom: -5%;
+  margin-top: -6%;
+  margin-bottom: -6%;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
 }
-.videoWrapper iframe {
+.videoWrapperProfile {
+  position: relative;
+  left: 0; right: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapperSlit {
+  position: relative;
+  left: 0; right: 0;
+  margin-top: -12%;
+  padding-bottom: 56%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe,
+.videoWrapperProfile iframe,
+.videoWrapperSlit iframe,
+.videoWrapperSlit img {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -299,7 +338,7 @@ figure.snip0016:hover figcaption::before {
 }
 
 .footer p {
-  font-family: Raleway;
+  font-family: Quicksand;
   padding-top: 0.5em;
   text-align: center;
   margin: 0;
