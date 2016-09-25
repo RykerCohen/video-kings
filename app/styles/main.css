@@ -84,9 +84,10 @@ span {
 /*parallax*/
 .parallax {
   /* The image used */
-  background-image: url("../images/lost-village.png");
+  background-image: url("../images/matt-johnson2.jpeg");
   /* Full height */
-  height: 100%;
+  min-height: 200px;
+  width: 100%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -142,8 +143,8 @@ nav {
 
 .card {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 330px;
+  height: 220px;
   margin: 7px;
   -webkit-box-flex: 1;
   -webkit-flex: auto;
@@ -165,6 +166,10 @@ nav {
 
 .thin {
   max-height: 50px;
+}
+
+.tall {
+  min-height: 300px;
 }
 
 .work-select {
@@ -194,9 +199,18 @@ nav {
 .videoWrapper {
 	position: relative;
   left: 0; right: 0;
-  margin-top: -6%;
-  margin-bottom: -6%;
+  margin-top: -8%;
+  margin-bottom: -9%;
   padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.videoWrapperBranding {
+	position: relative;
+  left: 0; right: 0;
+  margin-top: 0%;
+  margin-bottom: -11%;
+  padding-bottom: 48.25%; /* 16:9 */
   height: 0;
 }
 
@@ -250,6 +264,10 @@ figure.plain img {
 }
 
 figure.plain img {
+  opacity: 0.5;
+}
+
+figure.plain:hover img {
   opacity: 0.4;
 }
 
@@ -345,6 +363,18 @@ figure.snip a {
   bottom: 0;
   position: absolute;
   color: #ffffff;
+}
+
+figure.plain:hover h2,
+figure.plain:hover p {
+  color: #ffffff;
+}
+
+figure.plain:hover {
+  transition: background-color 1s ease-out;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  color: #337ab7;
 }
 
 figure.snip:hover img {
