@@ -167,6 +167,10 @@ nav {
   max-height: 50px;
 }
 
+.work-select {
+  min-width: 90%;
+}
+
 .work {
   min-width: 400px;
   height: auto;
@@ -223,7 +227,10 @@ nav {
 }
 
 /*Main Work*/
-figure.snip0016 {
+/*Figures*/
+/*figures hover*/
+figure.snip,
+figure.plain {
   color: #5cbf92;
   position: relative;
   float: left;
@@ -236,12 +243,18 @@ figure.snip0016 {
   box-sizing: border-box;
 }
 
-figure.snip0016 img {
+figure.snip img,
+figure.plain img {
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
 
-figure.snip0016 figcaption {
+figure.plain img {
+  opacity: 0.4;
+}
+
+figure.snip figcaption,
+figure.plain figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -250,7 +263,7 @@ figure.snip0016 figcaption {
   height: 100%;
 }
 
-figure.snip0016 figcaption::before {
+figure.snip figcaption::before {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -266,15 +279,31 @@ figure.snip0016 figcaption::before {
   transition-delay: 0.6s;
 }
 
-figure.snip0016 h2,
-figure.snip0016 p {
+figure.plain figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid #5cbf92;
+  content: '';
+  opacity: 1;
+  background-color: #5cbf92;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+figure.snip h2,
+figure.snip p {
   margin: 0 0 5px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
 }
 
-figure.snip0016 h2 {
+figure.snip h2 {
   word-spacing: -0.15em;
   font-weight: 300;
   text-transform: uppercase;
@@ -284,11 +313,20 @@ figure.snip0016 h2 {
   transition-delay: 0.3s;
 }
 
-figure.snip0016 h2 span {
-  font-weight: 800;
+figure.plain h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: -0.4em;
 }
 
-figure.snip0016 p {
+figure.snip h2 span,
+figure.plain h2 span {
+  font-weight: 700;
+}
+
+figure.snip p,
+figure.plain p {
   position: absolute;
   font-size: 1.2em;
   bottom: 0;
@@ -300,7 +338,7 @@ figure.snip0016 p {
   transition-delay: 0s;
 }
 
-figure.snip0016 a {
+figure.snip a {
   left: 0;
   right: 0;
   top: 0;
@@ -309,11 +347,11 @@ figure.snip0016 a {
   color: #ffffff;
 }
 
-figure.snip0016:hover img {
+figure.snip:hover img {
   opacity: 0.3;
 }
 
-figure.snip0016:hover figcaption h2 {
+figure.snip:hover figcaption h2 {
   opacity: 1;
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
@@ -321,7 +359,7 @@ figure.snip0016:hover figcaption h2 {
   transition-delay: 0.4s;
 }
 
-figure.snip0016:hover figcaption p {
+figure.snip:hover figcaption p {
   opacity: 1;
   -webkit-transform: translate3d(0%, 0%, 0);
   transform: translate3d(0%, 0%, 0);
@@ -329,12 +367,17 @@ figure.snip0016:hover figcaption p {
   transition-delay: 0.6s;
 }
 
-figure.snip0016:hover figcaption::before {
+figure.snip:hover figcaption::before {
   background: rgba(255, 255, 255, 0);
   left: 30px;
   opacity: 1;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
+}
+
+/*figure plain*/
+figure.plain {
+  opacity: 1 !important;
 }
 
 /*social nav*/
