@@ -9,6 +9,5 @@
  */
 angular.module('videoKingsApp')
   .controller('WorkCtrl', ['$scope', '$location', function ($scope, $location) {
-    $scope.currentLocation = $location.path();
-    console.log($scope.currentLocation);
+
   }]);

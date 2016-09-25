@@ -22,9 +22,9 @@ angular.module('Routes', [
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+      .when('/services', {
+        templateUrl: 'views/services.html',
+        controller: 'ServicesCtrl'
       })
       .when('/work', {
         templateUrl: 'views/work.html',
