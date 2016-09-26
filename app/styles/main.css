@@ -169,6 +169,11 @@ nav {
   width: 100%;
 }
 
+.slim {
+  max-height: 50px;
+}
+
+
 .tall {
   min-height: 300px;
 }
@@ -264,14 +269,6 @@ figure.plain img {
   transition: opacity 0.35s;
 }
 
-figure.plain img {
-  opacity: 0.4;
-}
-
-figure.plain:hover img {
-  opacity: 0.8;
-}
-
 figure.snip figcaption,
 figure.plain figcaption {
   position: absolute;
@@ -298,22 +295,6 @@ figure.snip figcaption::before {
   transition-delay: 0.6s;
 }
 
-figure.plain figcaption::before {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 100%;
-  border-left: 4px solid #5cbf92;
-  content: '';
-  opacity: 1;
-  background-color: #5cbf92;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
-}
-
 figure.snip h2,
 figure.snip p {
   margin: 0 0 5px;
@@ -330,13 +311,6 @@ figure.snip h2 {
   transform: translate3d(30%, 0%, 0);
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
-}
-
-figure.plain h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-  text-transform: uppercase;
-  margin-top: -0.4em;
 }
 
 figure.snip h2 span,
@@ -364,18 +338,6 @@ figure.snip a {
   bottom: 0;
   position: absolute;
   color: #ffffff;
-}
-
-figure.plain:hover h2,
-figure.plain:hover p {
-  color: #ffffff;
-}
-
-figure.plain:hover {
-  transition: background-color 1s ease-out;
-  transform: translateY(-2px);
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
-  color: #337ab7;
 }
 
 figure.snip:hover img {
@@ -409,6 +371,49 @@ figure.snip:hover figcaption::before {
 /*figure plain*/
 figure.plain {
   opacity: 1 !important;
+}
+
+figure.plain h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: -0.4em;
+}
+
+figure.plain:hover {
+  transition: background-color 1s ease-out;
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  color: #337ab7;
+}
+
+figure.plain:hover h2,
+figure.plain:hover p {
+  color: #ffffff;
+}
+
+figure.plain figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 100%;
+  border-left: 4px solid #5cbf92;
+  content: '';
+  opacity: 1;
+  background-color: #5cbf92;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+figure.plain img {
+  opacity: 0.4;
+}
+
+figure.plain:hover img {
+  opacity: 0.8;
 }
 
 /*social nav*/
@@ -504,6 +509,10 @@ figure.plain {
   }
   .work {
     min-width: auto;
+  }
+  figure.snip figcaption,
+  figure.plain figcaption {
+    padding: 30px 1.5em;
   }
   /* Remove the padding we set earlier */
   .footer {
