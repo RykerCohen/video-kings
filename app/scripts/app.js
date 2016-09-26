@@ -25,9 +25,9 @@ angular
 
   .run(['$rootScope', '$location', function ($rootScope, $location) {
     $rootScope.$on('$routeChangeError', function () {
-      $location.path('#/');
+      $location.path('/');
     });
-    
+
     $rootScope.isActive = function(viewLocation) {
       return viewLocation === $location.path();
     };

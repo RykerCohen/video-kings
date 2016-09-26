@@ -145,7 +145,6 @@ nav {
   position: relative;
   width: 330px;
   height: 220px;
-  margin: 7px;
   -webkit-box-flex: 1;
   -webkit-flex: auto;
       -ms-flex: auto;
@@ -165,7 +164,9 @@ nav {
 }
 
 .thin {
-  max-height: 50px;
+  max-height: 20px;
+  margin-top: -20px !important;
+  width: 100%;
 }
 
 .tall {
@@ -476,6 +477,10 @@ figure.plain {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 620px) {
+  .card {
+    margin: 6px;
+  }
+
   .img-top-align {
     height: auto !important;
   }
@@ -488,6 +493,10 @@ figure.plain {
 
 /* Responsive: Phones */
 @media screen and (max-width: 620px) {
+  .card {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
   #nav-seperator {
     padding-left: 1em;
     padding-right: 1em;
