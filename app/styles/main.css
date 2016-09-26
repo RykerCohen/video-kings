@@ -264,11 +264,11 @@ figure.plain img {
 }
 
 figure.plain img {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 figure.plain:hover img {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 figure.snip figcaption,
@@ -476,6 +476,9 @@ figure.plain {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 620px) {
+  .img-top-align {
+    height: auto !important;
+  }
   /* Remove the padding we set earlier */
   .footer {
     padding-left: 0;
