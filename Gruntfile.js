@@ -167,7 +167,8 @@ module.exports = function (grunt) {
             '!<%= yeoman.dist %>/Procfile',
             '!<%= yeoman.dist %>/package.json',
             '!<%= yeoman.dist %>/index.js',
-            '!<%= yeoman.dist %>/node_modules'
+            '!<%= yeoman.dist %>/node_modules',
+            '!<%= yeoman.dist %>/sitemap.xml'
           ]
         }]
       },
@@ -448,6 +449,15 @@ module.exports = function (grunt) {
       // }
     },
 
+    sitemap: {
+      dist: {
+        pattern: ['**/*.html', '!**/google*.html'], // this will exclude 'google*.html'
+        siteRoot: 'dist/',
+        homepage:'http://www.edwardstpaul.com/',
+        extension: { required: false }
+      }
+    },
+
     // Test settings
     karma: {
       unit: {
@@ -503,10 +513,14 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+    // 'sitemap'
   ]);
 
   // Build Control
   grunt.loadNpmTasks('grunt-build-control');
+
+  // Site-map
+  grunt.loadNpmTasks('grunt-sitemap');
 
   // Deployment shortcut
   grunt.registerTask('deploy', ['buildcontrol']);
