@@ -23,9 +23,7 @@ angular
     $httpProvider.useApplyAsync(true);
   }])
 
-  .run(['$rootScope', '$location', '$browser', function ($rootScope, $location, $browser) {
-    $browser.baseHref = function () { return "/"; };
-
+  .run(['$rootScope', '$location', function ($rootScope, $location) {
     $rootScope.$on('$routeChangeError', function () {
       $location.path('/');
     });
