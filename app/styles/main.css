@@ -118,7 +118,6 @@ nav {
   -o-transform:scale(1,.95);
 }
 
-
 /*Feed Grid*/
 .container {
   max-width: 1050px;
@@ -127,6 +126,11 @@ nav {
 .content {
   width: 100%;
   margin-bottom: 7em;
+}
+
+.content1 {
+  width: 100%;
+  margin-bottom: 11em;
 }
 
 .feed-grid {
@@ -173,6 +177,10 @@ nav {
   max-height: 50px;
 }
 
+.email-form {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
 
 .tall {
   min-height: 300px;
