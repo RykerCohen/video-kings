@@ -168,8 +168,7 @@ module.exports = function (grunt) {
             '!<%= yeoman.dist %>/package.json',
             '!<%= yeoman.dist %>/index.js',
             '!<%= yeoman.dist %>/node_modules',
-            '!<%= yeoman.dist %>/sitemap.xml',
-            '!<%= yeoman.dist %>/.htaccess'
+            '!<%= yeoman.dist %>/sitemap.xml'
           ]
         }]
       },
