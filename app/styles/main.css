@@ -486,6 +486,7 @@ figure.plain:hover img {
   padding-top: 0.5em;
   text-align: center;
   margin: 0;
+  font-size: 10px;
 }
 
 /* Responsive: Portrait tablets and up */
