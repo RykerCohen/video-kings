@@ -24,8 +24,9 @@ html {
 
 body {
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: #000000;
   font-family: Raleway;
+  color: #ffffff;
 }
 
 [ng-click] {
@@ -62,8 +63,8 @@ li {
 
 li a {
   cursor: pointer;
-  color: #000000;
-  opacity: 0.8;
+  color: #ffffff;
+  opacity: 0.95;
   text-decoration: none;
 }
 
@@ -97,8 +98,8 @@ span {
 
 /*Nav Bar*/
 #logo {
-  opacity: 0.9;
-  margin-top: -4em;
+  opacity: 0.95;
+  margin-top: 1em;
 }
 
 #nav-seperator {
@@ -110,7 +111,7 @@ span {
 nav {
   font-size: 1em;
   padding-bottom: 1.5em;
-  margin-top: -4em;
+  margin-top: 1em;
   transform: scale(1,.95);
   -webkit-transform:scale(1,.95);
   -moz-transform:scale(1,.95);
@@ -158,6 +159,8 @@ nav {
 .card img {
   width: 100%;
   height: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -349,7 +352,9 @@ figure.snip a {
 }
 
 figure.snip:hover img {
-  opacity: 0.3;
+  opacity: 0.45;
+  filter: none !important;
+  -webkit-filter: none !important;
 }
 
 figure.snip:hover figcaption h2 {
@@ -417,11 +422,13 @@ figure.plain figcaption::before {
 }
 
 figure.plain img {
-  opacity: 0.4;
+  opacity: 0.85;
 }
 
 figure.plain:hover img {
-  opacity: 0.8;
+  opacity: 0.85;
+  filter: none !important;
+  -webkit-filter: none !important;
 }
 
 /*social nav*/
@@ -433,7 +440,6 @@ figure.plain:hover img {
 .icons li {
   display: inline-block;
   margin: 0 4px;
-  opacity: 0.7;
 }
 
 .icons i {
@@ -443,8 +449,8 @@ figure.plain:hover img {
   text-align: center;
   width: 45px;
   border-radius: 100%;
-  color: #000;
-  box-shadow: inset 0 0 0 1px #000;
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px #ffffff;
   position: relative;
   cursor: pointer;
   -moz-transition: all 0.2s ease-out;
